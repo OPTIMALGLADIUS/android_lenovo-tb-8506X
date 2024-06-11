@@ -2,6 +2,6 @@
 # Replace ${_VENDORNAME_} with your Brand/Vendor/Manufacturer's Value, Mine is WALTON 
 
 ifneq ($(TARGET_DEVICE),tb-8506x)
-LOCAL_PATH := device/Lenovo/TB-8506X
+LOCAL_PATH := $(call my-dir)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
