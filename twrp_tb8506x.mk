@@ -14,9 +14,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from fire device
-$(call inherit-product, device/lenovo/tb-8506x/device.mk)
+$(call inherit-product, device/lenovo/tb8506x/device.mk)
 PRODUCT_DEVICE := tb-8506x
-PRODUCT_NAME := twrp_tb-8506x
+PRODUCT_NAME := twrp_tb8506x
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo Tab M8 3rd Gen
 PRODUCT_MANUFACTURER := lenovo
