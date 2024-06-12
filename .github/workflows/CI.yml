@@ -31,9 +31,10 @@ jobs:
           echo "Free space:"
           df -h
       - name: Creating TWRP directory
-        run: mkdir TWRP \
-             cd TWRP \
-             sudo apt install repo -y
+        run: |
+          mkdir TWRP
+          cd TWRP
+          sudo apt install repo -y
       # Enable tmate debugging of manually-triggered workflows if the input option was provided
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
