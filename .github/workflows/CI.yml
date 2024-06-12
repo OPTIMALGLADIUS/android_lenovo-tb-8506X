@@ -35,6 +35,11 @@ jobs:
           mkdir TWRP
           cd TWRP
           sudo apt install repo -y
+          git config --global user.name "OPTIMALGLADIUS"
+          git config --global user.email "${{ secrets.EMAIL }}"
+          repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+          repo sync
+          git clone https://github.com/OPTIMALGLADIUS/android_lenovo-tb-8506X.git device/lenovo/tb8506x
       # Enable tmate debugging of manually-triggered workflows if the input option was provided
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
