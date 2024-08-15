@@ -1,4 +1,4 @@
-name: CI
+name: kernel
 on:
   workflow_dispatch:
     inputs:
